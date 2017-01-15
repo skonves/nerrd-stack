@@ -8,7 +8,7 @@ The entry point for the client-side code is `/client/index.js`.  This code is ex
 This is were 99% of the magic happens.  This code is executed on both the client and the server, so don't make any references to anything like `fs` or `window`.
 
 ### /common/actions
-This is where actions (and Action Creators) are defined.  If you need to add a new way for a user to interact with the web app (eg, a new button to click, a new panel to expand, etc), you will likely need to start by adding an Action Creator.  Read the [Actions Readme](/common/actions/README.md) for more info.
+This is where actions (and Action Creators) are defined.  If you need to add a new way for a user to interact with the web app (eg, a new button to click, a new panel to expand, etc), you will likely need to start by adding an Action Creator.  Read the [Actions Readme](./common/actions/README.md) for more info.
 
 ### /common/components
 This is where React Components live.
