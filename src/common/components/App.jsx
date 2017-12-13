@@ -1,11 +1,12 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 import Login from './auth/login';
 
 export default class TodoApp extends Component {
 
 	static contextTypes = {
-		store: React.PropTypes.object.isRequired,
+		store: PropTypes.object.isRequired,
 	};
 
 	render() {

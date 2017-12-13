@@ -1,10 +1,11 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { login, logout } from '../../actions/auth';
 
 class Login extends Component {
 	static contextTypes = {
-		store: React.PropTypes.object.isRequired,
+		store: PropTypes.object.isRequired,
 	};
 
 	handleLogin(e) {
