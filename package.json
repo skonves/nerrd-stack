@@ -9,7 +9,7 @@
     "rebuild": "npm run clean && npm run build",
     "start": "NODE_ENV=development node ./.compiled/server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --optimize-dedupe"
+    "webpack": "webpack"
   },
   "author": "Steve Konves",
   "license": "MIT",
@@ -39,6 +39,6 @@
     "babel-preset-stage-0": "^6.16.0",
     "eslint": "^3.9.1",
     "eslint-plugin-babel": "^3.3.0",
-    "webpack": "^1.13.3"
+    "webpack": "^3.10.0"
   }
 }

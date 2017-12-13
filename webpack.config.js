@@ -9,10 +9,10 @@ module.exports = {
 		publicPath: '/static/'
 	},
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: /\.jsx?$/,
-				loader: 'babel',
+				loader: 'babel-loader',
 				exclude: /node_modules/,
 				include: path.resolve(__dirname, 'src'),
 				query: {
@@ -31,6 +31,6 @@ module.exports = {
 		]
 	},
 	resolve: {
-		extensions: ['', '.js', '.jsx'],
+		extensions: ['.js', '.jsx'],
 	}
 };
