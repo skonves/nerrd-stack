@@ -16,10 +16,8 @@ module.exports = {
 				exclude: /node_modules/,
 				include: path.resolve(__dirname, 'src'),
 				query: {
-					presets: ['es2015', 'stage-0'],
+					presets: ['env', 'stage-0'],
 					plugins: [
-						'transform-object-rest-spread',
-						'transform-es2015-destructuring',
 						'transform-react-jsx'
 					]
 				}

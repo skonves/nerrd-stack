@@ -1,10 +1,8 @@
 {
     "presets": [
-        "es2015", "stage-0"
+        "env", "stage-0"
     ],
     "plugins": [
-        "transform-object-rest-spread",
-        "transform-es2015-destructuring",
         "transform-react-jsx"
     ],
     "sourceMaps": "inline"
