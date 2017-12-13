@@ -127,6 +127,7 @@ function renderFullPage(html, initialState) {
 	  <head>
 		<title>Universal Redux Example</title>
 		<link rel="shortcut icon" type="image/png" href="assets/images/react.png">
+		<link rel="stylesheet" type="text/css" href="/dist/style.css">
 	  </head>
 	  <body>
 	  <div id="app">${html}</div>
