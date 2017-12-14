@@ -29,26 +29,20 @@ export function decrement() {
 }
 
 export function saveNumber(number) {
-	return dispatch => {
+	return async dispatch => {
 		dispatch(setLoadingMessage('saving ...'));
 
-		getRepository()
-			.numbers('save', { number })
-			.then(value => {
-				dispatch(setLoadingMessage());
-			});
+		await getRepository().numbers('save', { number });
+		dispatch(setLoadingMessage());
 	};
 }
 
 export function loadNumber() {
-	return dispatch => {
+	return async dispatch => {
 		dispatch(setLoadingMessage('loading ...'));
 
-		getRepository()
-			.numbers('load')
-			.then(value => {
-				dispatch(setLoadingMessage());
-				dispatch(setNumber(value));
-			});
+		const value = await getRepository().numbers('load');
+		dispatch(setLoadingMessage());
+		dispatch(setNumber(value));
 	};
 }

@@ -20,7 +20,13 @@ module.exports = {
 				query: {
 					presets: ['env', 'stage-0'],
 					plugins: [
-						'transform-react-jsx'
+						'transform-react-jsx',
+						['transform-runtime', {
+							'helpers': false,
+							'polyfill': false,
+							'regenerator': true,
+							'moduleName': 'babel-runtime'
+						  }]
 					]
 				}
 			},
