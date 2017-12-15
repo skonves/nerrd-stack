@@ -1,4 +1,4 @@
-# Node + Express + React + Redux (NERRd)
+# Node + Express + React + Redux + Docker (NERRD)
 
 ## Node
 Browsers run Javascript; servers run whatever. Using [Node](https://nodejs.org) on
@@ -40,11 +40,18 @@ Redux as a package manages the "Store" which houses the application state.  It a
 provides a pattern for laying out the reducer functions used to configure the
 Store.
 
-# How do I...
+## Docker
+"[Docker](https://www.docker.com/) is an open platform for developers and sysadmins to build, ship, and run distributed applications, whether on laptops, data center VMs, or the cloud."
 
-## Run this example site?
+# How to:
+
+## Run this example site
 1. Get the code by cloning this repo
 1. Install dependencies by running `npm install`
 1. Build by runing `npm run build`
 1. Start by runing `npm start`
 1. Access the site by navigating to `http://localhost:3000`
+
+## Build and run a Docker container
+1. Build: `docker build . -t nerrd-stack:latest`
+1. Run: `docker run -p 3000:3000 nerrd-stack:latest`
