@@ -59,7 +59,7 @@ userDataStrategy('get', { username });
 
 ## Strategies
 
-"Strategies" expose named IO operations.  A strategy module should expose a sinlge function which
+"Strategies" expose named IO operations.  A strategy module should expose a single function which
 accepts an operation name and an object containing any values needed to perform the operation.
 
 Example:
